@@ -23,7 +23,7 @@ if uploaded_file is not None:
 
             if response.status_code == 200:
                 result = response.json()
-                st.success(f"Предсказанная игра: {result['result']}")
+                st.success(f"Предсказанная цветок: {result['result']}")
             else:
                 st.error(f"Ошибка API: {response.text}")
 
